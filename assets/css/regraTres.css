@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #000000;
+}
+
+body{
+    background-color: rgb(44, 23, 63);
+}
+
+h1{
+    color: white;
+}
+
+#main{
+
+}
+
+#calc{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p{
+    color: white;
+}
+
+.box{
+    border-radius: 10px;
+    background-color: rgb(64, 58, 99);
+}
+
+#title{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(52, 39, 126);
+    font-weight: 800;
+}
