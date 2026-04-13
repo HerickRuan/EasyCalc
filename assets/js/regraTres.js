@@ -1,14 +1,26 @@
 
 function calc(){
-    const i1 = document.querySelector('#i1')
-    const i2 = document.querySelector('#i2')
-    const i3 = document.querySelector('#i3')
-    const i4 = document.querySelector('#i4')
-    const resHtml = document.querySelector('#res')
+    let i1 = Number(document.getElementById('i1').value)
+    let i2 = Number(document.getElementById('i2').value)
+    let i4 = Number(document.getElementById('i4').value)
+    let resHtml = document.getElementById('res')
 
-    let res = (i1.value * i4.value) / i2.value;
+    resHtml.innerHTML = '';
+    resHtml.style.display = 'none'
 
-    resHtml.innerHTML = res.toFixed(2);
-    resHtml.style.display = 'Block'
-    console.log(res);
+    if(i1 == 0 || i2 == 0 || i4 == 0){
+        resHtml.innerHTML = 'Todos os campos devem ser preenchidos.';
+        resHtml.style.display = 'Block'
+
+        console.log("Erro")
+    } else{
+        let res = (i1 * i4) / i2;
+
+        resHtml.innerHTML = res.toFixed(2);
+        resHtml.style.display = 'Block'
+        console.log(res);
+    }
+    
+    console.log(i1, typeof i1)
+    
 }

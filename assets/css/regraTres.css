@@ -1,38 +1,83 @@
 @charset "UTF-8";
 
 :root{
-    --cor01: #000000;
+    --cor01: rgb(52, 39, 126);
+    --cor02: rgb(44, 23, 63);
 }
 
 body{
-    background-color: rgb(44, 23, 63);
+    background-color: var(--cor02);
 }
 
-h1{
+a{
+    text-decoration: none;
     color: white;
-}
-
-#main{
-
-}
-
-#calc{
-    padding: 10px;
-    border-radius: 5px;
-}
-
-p{
-    color: white;
-}
-
-.box{
-    border-radius: 10px;
-    background-color: rgb(64, 58, 99);
 }
 
 #title{
+    color: white;
     text-align: center;
+    margin-bottom: 5vh;
     padding: 10px;
-    background-color: rgb(52, 39, 126);
+    background-color: var(--cor01);
     font-weight: 800;
+}
+
+#main{
+    display: grid;
+    place-items: center;
+    margin-bottom: 5vh;
+}
+
+#calc{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90vw;
+    font-weight: bold;
+    font-size: xx-large;
+    border-style: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+}
+
+#calc:hover{
+    background-color: #00000000;
+    border: 1px white solid;
+    color: white;
+}
+
+p{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.input{
+    font-size: x-large;
+    width: 40vw;
+    text-align: center;
+}
+
+
+#i1{
+    border-radius: 10px 0px 0px 0px;
+}
+
+#i2{
+    border-radius: 0px 10px 0px 0px;
+}
+
+#i3{
+    border-radius: 0px 0px 0px 10px;
+}
+
+#i4{
+    border-radius: 0px 0px 10px 0px;
 }
